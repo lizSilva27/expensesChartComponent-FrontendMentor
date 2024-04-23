@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(27, 66%, 92%);
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+}
+
+.mainContainer {
+  width: 344px;
+  margin: 68px auto;
+}
+@media (min-width: 600px) {
+  .mainContainer {
+    width: 540px;
+  }
+}
+
+.myBalance {
+  background-color: hsl(10, 79%, 65%);
+  height: 100px;
+  border-radius: 16px;
+  padding: 24px 20px;
+  display: flex;
+  color: hsl(33, 100%, 98%);
+  margin-bottom: 16px;
+  justify-content: space-between;
+}
+.myBalance__title {
+  font-size: 0.7em;
+  margin-bottom: 6px;
+}
+.myBalance__total {
+  font-weight: 700;
+  font-size: 1.4em;
+}
+.myBalance__logo {
+  width: 60px;
+}
+@media (min-width: 600px) {
+  .myBalance {
+    height: 126px;
+  }
+  .myBalance__title {
+    font-size: 1em;
+    margin-bottom: 12px;
+  }
+  .myBalance__total {
+    font-size: 1.8em;
+  }
+  .myBalance__logo {
+    width: 75px;
+  }
+}
+
+.chart {
+  background-color: hsl(33, 100%, 98%);
+  color: hsl(28, 10%, 53%);
+  border-radius: 16px;
+  min-height: 424px;
+  padding: 28px 20px;
+}
+.chart__title {
+  color: hsl(25, 47%, 15%);
+  font-size: 1.25em;
+  margin-bottom: 12px;
+}
+.chart__bars-container {
+  height: 220px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+.chart__bar {
+  background-color: hsl(10, 79%, 65%);
+  width: 32px;
+  height: 200px;
+  border-radius: 4px;
+  position: relative;
+}
+.chart__bar--label {
+  background-color: hsl(25, 47%, 15%);
+  color: hsl(33, 100%, 98%);
+  width: 38px;
+  font-size: 0.5em;
+  padding: 4px;
+  border-radius: 4px;
+  font-weight: 700;
+  position: absolute;
+  top: -24px;
+  left: -4px;
+  display: none;
+}
+.chart__bar--day {
+  position: absolute;
+  bottom: -16px;
+  font-size: 0.6em;
+  text-align: center;
+  width: 32px;
+}
+.chart__bar:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+  border: none;
+}
+.chart__analytics {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  font-size: 0.6em;
+  border-top: 2px solid hsl(27, 66%, 92%);
+}
+.chart__total {
+  margin-bottom: 8px;
+}
+.chart__total-value {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+  font-size: 1.9em;
+}
+.chart__porcentage {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+  text-align: right;
+  margin-top: 18px;
+  font-size: 1.3em;
+}
+@media (min-width: 600px) {
+  .chart {
+    padding: 44px;
+  }
+  .chart__title {
+    font-size: 2em;
+  }
+  .chart__bars-container {
+    margin-bottom: 50px;
+  }
+  .chart__bar {
+    width: 50px;
+  }
+  .chart__bar--label {
+    width: 54px;
+    font-size: 0.7em;
+    top: -32px;
+    left: 2px;
+  }
+  .chart__bar--day {
+    width: 54px;
+    bottom: -24px;
+    font-size: 0.8em;
+  }
+  .chart__analytics {
+    padding-top: 32px;
+    font-size: 0.9em;
+  }
+  .chart__total-value {
+    font-size: 2.4em;
+  }
+  .chart__porcentage {
+    margin-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
